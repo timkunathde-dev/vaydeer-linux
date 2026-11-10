@@ -61,7 +61,7 @@ the output of `lsusb` and the hex output described in [docs/PROTOCOL.md](docs/PR
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/vaydeer-linux.git
+git clone https://github.com/timkunathde-dev/vaydeer-linux.git
 cd vaydeer-linux
 ./install.sh
 ```

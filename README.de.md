@@ -62,7 +62,7 @@ beschrieben.
 ## Installation
 
 ```bash
-git clone https://github.com/DEIN-BENUTZERNAME/vaydeer-linux.git
+git clone https://github.com/timkunathde-dev/vaydeer-linux.git
 cd vaydeer-linux
 ./install.sh
 ```
