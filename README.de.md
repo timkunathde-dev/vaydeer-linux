@@ -86,6 +86,27 @@ Deine Belegung bleibt erhalten.
 - **Overlay:** über das Augen-Symbol oben links einschalten. Mit der Maus verschieben,
   Rechtsklick für Optionen (Sichtbarkeit, Größe, Deckkraft)
 
+## Dienst und Autostart
+
+Der Hintergrunddienst startet automatisch, sobald du dich am Desktop anmeldest. Steuern
+kannst du ihn mit diesen Befehlen (wichtig: `--user` und **kein** `sudo`):
+
+```bash
+systemctl --user start vaydeerd      # starten
+systemctl --user stop vaydeerd       # stoppen
+systemctl --user restart vaydeerd    # neu starten
+systemctl --user status vaydeerd     # läuft er?
+systemctl --user enable vaydeerd     # nach der Anmeldung automatisch starten (Standard)
+systemctl --user disable vaydeerd    # Autostart abschalten
+```
+
+Der Dienst läuft bewusst in deiner Desktop-Sitzung, denn Programme starten, Webseiten öffnen
+und Benachrichtigungen anzeigen funktionieren nur dort. Soll das Pad direkt nach dem
+Hochfahren bereit sein, aktiviere in den Systemeinstellungen die automatische Anmeldung.
+
+Das Overlay startest du manuell mit `vaydeer-overlay`. Schaltest du es in der App über das
+Augen-Symbol ein, startet es außerdem automatisch nach der Anmeldung.
+
 ## Funktionsweise
 
 | Komponente | Aufgabe |

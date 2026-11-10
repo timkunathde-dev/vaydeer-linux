@@ -84,6 +84,27 @@ To update, pull the latest version and run `./install.sh` again. Your configurat
 - **Overlay:** click the eye icon in the top-left corner. Move the overlay with the mouse,
   right-click it for options (visibility, size, opacity)
 
+## Service and autostart
+
+The background service starts automatically when you log in to your desktop. You can
+control it with these commands (note: `--user` and **no** `sudo`):
+
+```bash
+systemctl --user start vaydeerd      # start
+systemctl --user stop vaydeerd       # stop
+systemctl --user restart vaydeerd    # restart
+systemctl --user status vaydeerd     # check whether it is running
+systemctl --user enable vaydeerd     # start automatically after login (default)
+systemctl --user disable vaydeerd    # disable autostart
+```
+
+The service runs in your desktop session on purpose: launching apps, opening websites and
+showing notifications all need it. If you want the keypad to work right after booting,
+enable automatic login in your system settings.
+
+The overlay can be started manually with `vaydeer-overlay`. When you turn it on in the app
+(eye icon), it also starts automatically after login.
+
 ## How it works
 
 | Component | Purpose |
