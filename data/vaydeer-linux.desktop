@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Vaydeer für Linux
+Name[en]=Vaydeer for Linux
+Comment=Tasten des Vaydeer Macro Keypads belegen
+Comment[en]=Configure the keys of the Vaydeer macro keypad
+Exec=/usr/local/bin/vaydeer-linux
+Icon=input-keyboard
+Categories=Settings;HardwareSettings;
+Keywords=vaydeer;macro;keypad;macropad;tasten;makro;
+StartupNotify=true

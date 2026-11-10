@@ -1,0 +1,12 @@
+[Unit]
+Description=Vaydeer for Linux (key mapping daemon)
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/vaydeer-linux/vaydeerd.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target

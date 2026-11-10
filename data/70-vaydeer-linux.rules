@@ -1,0 +1,4 @@
+# Vaydeer 9-key Smart Keypad: access for the logged-in user
+KERNEL=="hidraw*", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5752", TAG+="uaccess"
+# Virtual keyboard (uinput) for the logged-in user
+KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"
